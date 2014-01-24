@@ -1,0 +1,264 @@
+body {
+	font: 400 14px/1.4 'Vollkorn', Georgia, Times, serif;
+	color: #232525;
+	background: #eeffee;
+	}
+
+h1, h2, h3, h4, h5, h6 {
+	-webkit-margin-before:0px;
+	-webkit-margin-after:0px;
+	-moz-margin-before:0px;
+	-moz-margin-after:0px;
+	}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight:400;
+	}
+
+h1, h2, h3, h4, h5, h6 {
+	font: 400 25px/1.2 'Ubuntu', Helvetica, Arial, sans-serif;
+	color: #2f99ba;
+}
+
+h1 {
+	font-size:3.2em;
+	line-height:1.2em;
+	}
+	
+h2 {
+	font-size:2em;
+	}
+
+h3 {
+	font-size:1.7em;
+	line-height:1.6em;
+	}
+
+h4 {
+	font-size: 1.6em;
+	line-height:1.6em;
+	}
+
+h5{
+	font-size:1.5em;
+	line-height:1.6em;
+	}
+	
+h6{
+	font-size:1.4em;
+	line-height:1.55em;
+	}
+	
+#clickToContinue{
+	font-family: "Ubuntu";
+	font-size:1.2em;
+	font-weight:300;
+	letter-spacing: 0.0em;
+	background-color: #aaaaff;
+	color: #ddddff;
+	padding: 20px 20px 20px 20px;
+	margin: 0px 140px 0px 140px;
+	border-radius: 20px;
+	/*
+	-moz-box-shadow: 0px 0px 1px #002033;
+	-webkit-box-shadow: 0px 0px 1px #002033;
+	box-shadow: 0px 0px 1px #002033;	
+	*/
+	}	
+	
+p {
+	font-size:1.6em;
+	font-weight:300;
+	}
+
+.q {
+	color:#303235;
+	}
+	
+a {
+	text-decoration:underline;
+	color: #30cc35;
+	}
+	
+a:hover, a.white:hover {
+	color: #30ff35;
+	}
+	
+a.big {
+	color: #f3734f;
+	text-decoration:none;
+	}
+
+a.big:hover {
+	text-shadow: 0 0 6px #F5D0A9;
+}
+	
+a.white {
+	color:white;
+	}
+
+a.white:hover{
+	color:#303235;
+	}
+	
+.white {
+	color:white;
+	}
+	
+.black {
+	color:#303235;
+	}
+
+.emphasis {
+	color: #aaaaff;
+	text-shadow: 0px 2px 2px rgba(64, 64, 127, 0.4);
+}
+
+.emphasis2 {
+	color: #ffffff;
+	text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.5);
+}
+
+.insights {
+	color: #A6D6D6;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+}
+
+img{
+	padding-bottom:30px;
+	max-width:600px;
+	}
+	
+#link{
+	z-index:1;
+	}
+
+.slide{
+	margin: 36px;
+
+	-moz-box-shadow: 1px 1px 5px #008220;
+	-webkit-box-shadow: 1px 1px 5px #008220;
+	box-shadow: 1px 1px 5px #008220;
+
+}	
+	
+.slide one:hover{
+	cursor: pointer;
+	}
+	
+table, tr, td, th{
+	vertical-align: middle;
+	text-align:center;
+	width:100%;
+	border-collapse: collapse;
+	border: none
+	border-spacing: 0;
+	padding: 0;
+	margin: 0;
+}
+
+table .top{
+	vertical-align: top;
+	}
+
+tr .top{
+	vertical-align: top;
+	}
+
+td .top{
+	vertical-align: top;
+	}
+	
+.content-frame, .content {
+	text-align: center;
+	}
+	
+.content{
+	min-width:400px;
+	max-width:600px;
+	margin:auto;
+	padding:20px 50px 70px 50px;
+	}
+
+.content2{
+	min-width:400px;
+	max-width:700px;
+	margin:auto;
+	padding:50px 50px 70px 50px;
+	}	
+
+.content3{
+	min-width:400px;
+	max-width:800px;
+	padding:20px 50px 70px 50px;
+	}
+
+
+
+.content-wide{
+	min-width:400px;
+	max-width:900px;
+	margin:auto;
+	padding:0px 50px 70px 50px;
+	}
+	
+	
+.first{
+	background: #2f99ba;
+	cursor: pointer;
+	border-radius: 30px;
+	}
+	
+.second{
+	background: #7c102a;
+	border-radius: 30px;
+	font-size: 12px;
+	line-height: 1.2;
+	}
+	
+.third{
+	background: #7c102a;
+	border-radius: 30px;
+	font-size: 12px;
+	line-height: 1.2;
+	}	
+	
+.fourth{
+	background: #89a342;
+	background-position:center; 
+	border-radius: 30px;
+	font-size: 12px;
+	line-height: 1.2;	
+	}
+	
+.fifth{
+	background: #89a342;
+	border-radius: 30px;
+	font-size: 12px;
+	line-height: 1.2;	
+	}
+
+.sixth{
+	border-radius: 30px;	
+	background: #cf324e url("http://careevolution.com/letsfixhealthcare.com/images/insights2.png") no-repeat;
+	font-size: 14px;
+	line-height: 1.4;	
+	}
+	
+.seventh{
+/*
+	background: #1e2834 url("file:///C:/CareEvolution/LetsFixHealthcare.com/CareEvolution/images/team_background.png") repeat-x;	
+*/
+	background: #1e2834 url("http://careevolution.com/letsfixhealthcare.com/images/team_background.png") repeat-x;
+	border-radius: 30px;
+	font-size: 12px;
+	line-height: 1.2;	
+	color: #edaa1e;	
+	}
+	
+.eighth{
+	background: #ffffff;
+	border-radius: 30px;
+	font-size: 12px;
+	line-height: 1.2;		
+	}

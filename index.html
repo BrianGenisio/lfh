@@ -1,79 +1,253 @@
-<!DOCTYPE html>
-<html>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Lfh : A port of LetsFixHealthcare.com to support mobile" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+<head>
+  <title>Let's Fix Healthcare - CareEvolution</title>
 
-    <title>Lfh</title>
-  </head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="assets/style.css" type="text/css">
+  <script src="assets/jquery.js"></script>
 
-  <body>
+  <script>
+  
+  function goToByScroll(id){
+        $('html,body').animate({scrollTop: $("."+id).offset().top -36},'fast');
+  }
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/BrianGenisio/lfh">View on GitHub</a>
+  $(document).ready(function() {
+    $(".slide a").click(function(e) {
+      e.stopPropagation();
+    });
 
-          <h1 id="project_title">Lfh</h1>
-          <h2 id="project_tagline">A port of LetsFixHealthcare.com to support mobile</h2>
+    $(".first").click(function(){
+      $('#clickToContinue').fadeTo(500, 0);
+    });
+  });
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/BrianGenisio/lfh/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/BrianGenisio/lfh/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+  $(function()
+  {
+      $('.slide') .css({'height': (($(window).height()) -72)});
+      $('table') .css({'height': (($(window).height()) -72)});
+
+
+      $(window).bind('resize', function(){
+        $('.slide') .css({'height': (($(window).height()) -72)});
+        $('table') .css({'height': (($(window).height()) -72)});
+      });
+
+  });
+
+  $(function() {
+      $('#clickToContinue').hide().fadeIn(2000);
+  });
+
+  $('body').click(function() {
+     $('#clickToContinue').hide();
+  });
+  </script>
+
+<!--
+  <link href="http://fonts.googleapis.com/css?family=Cantata+One" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Imprima" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Ubuntu:bold" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet" type="text/css">
+-->
+
+  <style>
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v4/0ihfXUL2emPh0ROJezvraD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Vollkorn Regular'), local('Vollkorn-Regular'), url(http://themes.googleusercontent.com/static/fonts/vollkorn/v3/BCFBp4rt5gxxFrX6F12DKvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+
+  </style>
+
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-37749034-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+</head>
+
+<body>
+    <div style="height: 678px;" class="first slide" onclick="goToByScroll('second')">
+      <div class="content-frame">
+        <table style="height: 678px;">
+          <tbody><tr>
+            <td>
+              <div class="content">
+                <!-- <img src="images/HealthcareIsBroken.png" /> -->
+                <h1 style="color: #bbbbff;">Healthcare is broken.</h1>
+
+                <p>There are a lot of problems in healthcare.  Big, complex problems.  And one of the biggest is that caregivers have an incomplete picture of patients' clinical data - leading to inaccurate diagnoses and inappropriate courses of treatment.</p>
+                <p>CareEvolution is working to solve this problem.  But we need talented <span class="emphasis">software engineers</span> - fulltime and interns - to join us in realizing our vision.</p>
+
+                <br/>
+                <p style="display: block;" id="clickToContinue">Click Anywhere to Learn More</p>
+              </div>
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+    <div style="height: 678px;" class="second slide" onclick="goToByScroll('third')">
+      <div class="content-frame">
+        <table style="height: 678px;">
+          <tbody><tr>
+            <td>
+              <div class="content">
+                <table style="width: 100%">
+                <tr>
+                <td style="width: 100px"><img src="images/joe_final.png" hspace="10"></td>
+                <td style="width: 10px">&nbsp;</td>
+                <td style="width: 100%;text-align:left"><h1 style="color: #D04A5E;">Meet Joe.</h1>
+                <p style="color: #9EC0C0;">One day, Joe got very sick. He went to the hospital and was admitted to the ER.  It turns out to be serious, and he was transferred to intensive care.
+                <p style="color: #9EC0C0;">A physician orders a few radiology images, and some labs, while Joe is in the ICU.  Joe has a couple of procedures done, and is transferred to regular inpatient.  Soon after, Joe gets better and is released, with a prescription - and he continues treatment as an outpatient, but at a separate clinic.</p>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+                </td>
+                </tr>
+                </table>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
+              </div>
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
     </div>
+    <div style="height: 678px;" class="third slide" onclick="goToByScroll('fourth')">
+      <div class="content-frame">
+        <table style="height: 678px;">
+          <tbody><tr>
+            <td>
+              <div class="content-wide">
+                <table style="width: 100%">
+                <tr>
+                <td style="width: 150px"><img src="images/joe_network_final_2.png" hspace="10"></td>
+                <td style="width: 10px">&nbsp;</td>
+                <td style="width: 100%;text-align:left">
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Lfh maintained by <a href="https://github.com/BrianGenisio">BrianGenisio</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
+                <p style="color: #9EC0C0;"><big><b>D</b></big>uring his stay, Joe came into contact with <i>at least</i> six different departments:  ER, ICU, Regular Inpatient, Radiology, Lab, and Pharmacy.
+                And each department has its own Electronic Medical Records (EMR) system.
+
+                <p style="color: #9EC0C0;">Since the data is separate, the clinical picture is not clear.
+                Joe, for example, had an allergic reaction to Lorazepam.  This is important information for pharmacists - for this visit or for a visit ten years in the future.</p>
+
+                <p style="color: #9EC0C0;"><em>There is unrealized value in coupling data across EMRs.</em></p>
+
+                </td>
+                </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
     </div>
+    <div style="height: 678px;" class="fourth slide" onclick="goToByScroll('fifth')">
+      <div class="content-frame">
+        <table style="height: 678px;">
+          <tbody><tr>
+            <td>
+              <div class="content2">
+                <img src="images/HIEBus.png" vspace="10">
 
-    
+                <p style="color: #ffffff">This is where Health Information Exchange plays a part.
+                CareEvolution's HIE platform enables the secure sharing of clinical data - across multiple care settings in a hospital...</p>
 
-  </body>
-</html>
+              </div>
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+    </div>
+    <div style="height: 678px;" class="fifth slide" onclick="goToByScroll('sixth')">
+      <div class="content-frame">
+        <table style="height: 678px;">
+          <tbody><tr>
+            <td>
+              <div class="content">
+                <img src="images/HIEBus_Network.png">
+
+                <p style="color: #ffffff">...or, across multiple hospitals and clinics!</p>
+              </div>
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+    </div>
+    <div style="height: 678px;" class="sixth slide" onclick="goToByScroll('seventh')">
+      <div class="content-frame">
+        <table style="height: 678px;">
+          <tbody><tr>
+            <td>
+              <div class="content3">
+                <table style="width: 100%">
+                <tr>
+                <td style="width: 35%;vertical-align: top;"><span style="color: #cf324f"></span></td>
+                <td style="width: 100%;text-align:left">
+                <p class="insights">On top of this platform, we have written many applications that look across data in multiple care settings.  The result is much greater, actionable <span class="emphasis2">insight</span> - directly leading to more effective diagnosis and treatment of patients.</p>
+
+                </td></tr></table>
+
+              </div>
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+    </div>
+    <div style="height: 678px;" class="seventh slide" onclick="goToByScroll('eighth')">
+      <div class="content-frame-seven">
+        <table style="height: 678px;" class="top">
+          <tbody><tr class="top">
+            <td class="top">
+              <div class="content-wide">
+                <img src="images/team2.png" border=0>
+
+                <p>CareEvolution is looking for software engineers to help us solve these problems.
+                We are small, but <i>focused</i>: we have implemented <i>several statewide exchanges</i>.
+                Already, our platform has dramatically improved the quality of care for <i>millions</i> of patients.
+                </p>
+              </div>
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+    </div>
+    <div style="height: 678px;" class="eighth slide">
+      <div class="content-frame-eight">
+        <table style="height: 678px;">
+          <tbody><tr>
+            <td>
+              <div class="content">
+                <img src="images/logo.jpg">
+
+                <p>This is an exciting time to be in Healthcare IT. Our country's leaders at all levels of government, business, and academia are debating the best ways to fix our healthcare system.
+
+                <p>Healthcare is broken.  Let's fix it.  Come be a part of the solution.</p>
+
+                <p>Please send your resume (and code samples, if available) to <a href="mailto:resume@careevolution.com?subject=LetsFixHealthcare%20Resume%20Submission">resume@careevolution.com</a>.</p>
+              </div>
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+    </div>
+</body></html>
