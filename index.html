@@ -1,256 +1,128 @@
+<!doctype html>
+<html lang="en">
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta charset="utf-8">
 
-<head>
-  <title>Let's Fix Healthcare - CareEvolution</title>
+    <title>Let's Fix Healthcare</title>
 
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  
-  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css">
-  <link rel="stylesheet" href="assets/style.css" type="text/css">
-  <script src="assets/jquery.js"></script>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-  <script>
-  
-  function goToByScroll(id){
-        $('html,body').animate({scrollTop: $("."+id).offset().top -36},'fast');
-  }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  $(document).ready(function() {
-    $(".slide a").click(function(e) {
-      e.stopPropagation();
-    });
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="reveal/reveal.min.css">
+    <link rel="stylesheet" href="reveal/sky.css" id="theme">
+    <link rel="stylesheet" href="assets/style.css">
 
-    $(".first").click(function(){
-      $('#clickToContinue').fadeTo(500, 0);
-    });
-  });
+    <!--[if lt IE 9]>
+    <script src="reveal/html5shiv.js"></script>
+    <![endif]-->
+  </head>
 
-  $(function()
-  {
-      $('.slide') .css({'height': (($(window).height()) -72)});
-      $('table') .css({'height': (($(window).height()) -72)});
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <section class="healthcare-is-broken" data-state="healthcare-is-broken">
+            <h1>Healthcare is broken.</h1>
 
+                    <p>There are a lot of problems in healthcare.  Big, complex problems.  And one of the biggest is that caregivers have an incomplete picture of patients' clinical data - leading to inaccurate diagnoses and inappropriate courses of treatment.</p>
 
-      $(window).bind('resize', function(){
-        $('.slide') .css({'height': (($(window).height()) -72)});
-        $('table') .css({'height': (($(window).height()) -72)});
+                    <p>CareEvolution is working to solve this problem.  But we need talented <span class="emphasis">software engineers</span> - fulltime and interns - to join us in realizing our vision.</p>
+          </section>
+
+          <section class="meet-joe row" data-state="meet-joe">
+            <img class="joe col-md-3" src="images/joe_final.png">
+
+            <div class="content col-md-9">
+              <h1>Meet Joe.</h1>
+                        
+                    <p>One day, Joe got very sick. He went to the hospital and was admitted to the ER.  It turns out to be serious, and he was transferred to intensive care.</p>
+
+                    <p>A physician orders a few radiology images, and some labs, while Joe is in the ICU.  Joe has a couple of procedures done, and is transferred to regular inpatient.  Soon after, Joe gets better and is released, with a prescription - and he continues treatment as an outpatient, but at a separate clinic.</p>
+                  </div>
+          </section>
+
+          <section class="joe-in-er row" data-state="joe-in-er">
+            <img class="joe col-md-3" src="images/joe_network_final_2.png">
+
+            <div class="content col-md-9">
+              <p>During his stay, Joe came into contact with <i>at least</i> six different departments:  ER, ICU, Regular Inpatient, Radiology, Lab, and Pharmacy. And each department has its own Electronic Medical Records (EMR) system.</p>
+
+                      <p>Since the data is separate, the clinical picture is not clear.
+                        Joe, for example, had an allergic reaction to Lorazepam.  This is important information for pharmacists - for this visit or for a visit ten years in the future.</p>
+
+                      <p><em>There is unrealized value in coupling data across EMRs.</em></p>
+                  </div>  
+          </section>
+
+          <section class="row hie" data-state="hie">
+            <img src="images/HIEBus.png">
+
+                    <p>This is where Health Information Exchange plays a part.
+                    CareEvolution's HIE platform enables the secure sharing of clinical data - across multiple care settings in a hospital...</p>
+          </section>
+
+          <section class="row hie-network" data-state="hie-network">
+            <img src="images/HIEBus_Network.png">
+
+                    <p>...or, across multiple hospitals and clinics!</p>
+          </section>  
+
+          <section class="row insights" data-state="insights">
+            <img src="images/insights2.png" class="col-md-3">
+
+            <div class="col-md-9">
+              <p>On top of this platform, we have written many applications that look across data in multiple care settings.  The result is much greater, actionable <em>insight</em> - directly leading to more effective diagnosis and treatment of patients.</p>
+            </div>
+          </section>
+
+          <section class="row team" data-state="team">
+            <img src="images/team2.png">
+
+                    <p>CareEvolution is looking for software engineers to help us solve these problems.  We are small, but <em>focused</em>: we have implemented <em>several statewide exchanges</em>. Already, our platform has dramatically improved the quality of care for <em>millions</em> of patients.</p>
+          </section>
+
+          <section class="row" data-state="care-evolution">
+            <img src="images/logo.jpg">
+
+                    <p>This is an exciting time to be in Healthcare IT. Our country's leaders at all levels of government, business, and academia are debating the best ways to fix our healthcare system.
+
+                    <p>Healthcare is broken.  Let's fix it.  Come be a part of the solution.</p>
+
+                    <p>Please send your resume (and code samples, if available) to <a href="mailto:resume@careevolution.com?subject=LetsFixHealthcare%20Resume%20Submission">resume@careevolution.com</a>.</p>
+          </section>
+        </section>
+      </div>
+
+    </div>
+
+    <script src="assets/jquery.js"></script>
+    <script src="reveal/head.min.js"></script>
+    <script src="reveal/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        history: true,
+        center: true,
+        keyboard: true,
+        touch: true,
+        mouseWheel: true,
+        transition: 'linear',
+        backgroundTransition: 'concave'
       });
 
-  });
+      $(document).click(function() {
+        Reveal.next();
+      });
 
-  $(function() {
-      $('#clickToContinue').hide().fadeIn(2000);
-  });
+    </script>
 
-  $('body').click(function() {
-     $('#clickToContinue').hide();
-  });
-  </script>
-
-<!--
-  <link href="http://fonts.googleapis.com/css?family=Cantata+One" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Imprima" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Ubuntu:bold" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet" type="text/css">
--->
-
-  <style>
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v4/0ihfXUL2emPh0ROJezvraD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
-}
-
-@font-face {
-  font-family: 'Vollkorn';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Vollkorn Regular'), local('Vollkorn-Regular'), url(http://themes.googleusercontent.com/static/fonts/vollkorn/v3/BCFBp4rt5gxxFrX6F12DKvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
-}
-
-  </style>
-
-  <script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-37749034-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-  </script>
-</head>
-
-<body>
-    <div style="height: 678px;" class="first slide" onclick="goToByScroll('second')">
-      <div class="content-frame">
-        <table style="height: 678px;">
-          <tbody><tr>
-            <td>
-              <div class="content">
-                <!-- <img src="images/HealthcareIsBroken.png" /> -->
-                <h1 style="color: #bbbbff;">Healthcare is broken.</h1>
-
-                <p>There are a lot of problems in healthcare.  Big, complex problems.  And one of the biggest is that caregivers have an incomplete picture of patients' clinical data - leading to inaccurate diagnoses and inappropriate courses of treatment.</p>
-                <p>CareEvolution is working to solve this problem.  But we need talented <span class="emphasis">software engineers</span> - fulltime and interns - to join us in realizing our vision.</p>
-
-                <br/>
-                <p style="display: block;" id="clickToContinue">Click Anywhere to Learn More</p>
-              </div>
-            </td>
-          </tr>
-        </tbody></table>
-      </div>
-    </div>
-
-    <div style="height: 678px;" class="second slide" onclick="goToByScroll('third')">
-      <div class="content-frame">
-        <table style="height: 678px;">
-          <tbody><tr>
-            <td>
-              <div class="content">
-                <table style="width: 100%">
-                <tr>
-                <td style="width: 100px"><img src="images/joe_final.png" hspace="10"></td>
-                <td style="width: 10px">&nbsp;</td>
-                <td style="width: 100%;text-align:left"><h1 style="color: #D04A5E;">Meet Joe.</h1>
-                <p style="color: #9EC0C0;">One day, Joe got very sick. He went to the hospital and was admitted to the ER.  It turns out to be serious, and he was transferred to intensive care.
-                <p style="color: #9EC0C0;">A physician orders a few radiology images, and some labs, while Joe is in the ICU.  Joe has a couple of procedures done, and is transferred to regular inpatient.  Soon after, Joe gets better and is released, with a prescription - and he continues treatment as an outpatient, but at a separate clinic.</p>
-
-                </td>
-                </tr>
-                </table>
-
-              </div>
-            </td>
-          </tr>
-        </tbody></table>
-      </div>
-    </div>
-    <div style="height: 678px;" class="third slide" onclick="goToByScroll('fourth')">
-      <div class="content-frame">
-        <table style="height: 678px;">
-          <tbody><tr>
-            <td>
-              <div class="content-wide">
-                <table style="width: 100%">
-                <tr>
-                <td style="width: 150px"><img src="images/joe_network_final_2.png" hspace="10"></td>
-                <td style="width: 10px">&nbsp;</td>
-                <td style="width: 100%;text-align:left">
-
-                <p style="color: #9EC0C0;"><big><b>D</b></big>uring his stay, Joe came into contact with <i>at least</i> six different departments:  ER, ICU, Regular Inpatient, Radiology, Lab, and Pharmacy.
-                And each department has its own Electronic Medical Records (EMR) system.
-
-                <p style="color: #9EC0C0;">Since the data is separate, the clinical picture is not clear.
-                Joe, for example, had an allergic reaction to Lorazepam.  This is important information for pharmacists - for this visit or for a visit ten years in the future.</p>
-
-                <p style="color: #9EC0C0;"><em>There is unrealized value in coupling data across EMRs.</em></p>
-
-                </td>
-                </tr>
-                </table>
-              </div>
-            </td>
-          </tr>
-        </tbody></table>
-      </div>
-    </div>
-    <div style="height: 678px;" class="fourth slide" onclick="goToByScroll('fifth')">
-      <div class="content-frame">
-        <table style="height: 678px;">
-          <tbody><tr>
-            <td>
-              <div class="content2">
-                <img src="images/HIEBus.png" vspace="10">
-
-                <p style="color: #ffffff">This is where Health Information Exchange plays a part.
-                CareEvolution's HIE platform enables the secure sharing of clinical data - across multiple care settings in a hospital...</p>
-
-              </div>
-            </td>
-          </tr>
-        </tbody></table>
-      </div>
-    </div>
-    <div style="height: 678px;" class="fifth slide" onclick="goToByScroll('sixth')">
-      <div class="content-frame">
-        <table style="height: 678px;">
-          <tbody><tr>
-            <td>
-              <div class="content">
-                <img src="images/HIEBus_Network.png">
-
-                <p style="color: #ffffff">...or, across multiple hospitals and clinics!</p>
-              </div>
-            </td>
-          </tr>
-        </tbody></table>
-      </div>
-    </div>
-    <div style="height: 678px;" class="sixth slide" onclick="goToByScroll('seventh')">
-      <div class="content-frame">
-        <table style="height: 678px;">
-          <tbody><tr>
-            <td>
-              <div class="content3">
-                <table style="width: 100%">
-                <tr>
-                <td style="width: 35%;vertical-align: top;"><span style="color: #cf324f"></span></td>
-                <td style="width: 100%;text-align:left">
-                <p class="insights">On top of this platform, we have written many applications that look across data in multiple care settings.  The result is much greater, actionable <span class="emphasis2">insight</span> - directly leading to more effective diagnosis and treatment of patients.</p>
-
-                </td></tr></table>
-
-              </div>
-            </td>
-          </tr>
-        </tbody></table>
-      </div>
-    </div>
-    <div style="height: 678px;" class="seventh slide" onclick="goToByScroll('eighth')">
-      <div class="content-frame-seven">
-        <table style="height: 678px;" class="top">
-          <tbody><tr class="top">
-            <td class="top">
-              <div class="content-wide">
-                <img src="images/team2.png" border=0>
-
-                <p>CareEvolution is looking for software engineers to help us solve these problems.
-                We are small, but <i>focused</i>: we have implemented <i>several statewide exchanges</i>.
-                Already, our platform has dramatically improved the quality of care for <i>millions</i> of patients.
-                </p>
-              </div>
-            </td>
-          </tr>
-        </tbody></table>
-      </div>
-    </div>
-    <div style="height: 678px;" class="eighth slide">
-      <div class="content-frame-eight">
-        <table style="height: 678px;">
-          <tbody><tr>
-            <td>
-              <div class="content">
-                <img src="images/logo.jpg">
-
-                <p>This is an exciting time to be in Healthcare IT. Our country's leaders at all levels of government, business, and academia are debating the best ways to fix our healthcare system.
-
-                <p>Healthcare is broken.  Let's fix it.  Come be a part of the solution.</p>
-
-                <p>Please send your resume (and code samples, if available) to <a href="mailto:resume@careevolution.com?subject=LetsFixHealthcare%20Resume%20Submission">resume@careevolution.com</a>.</p>
-              </div>
-            </td>
-          </tr>
-        </tbody></table>
-      </div>
-    </div>
-</body></html>
+  </body>
+</html>
