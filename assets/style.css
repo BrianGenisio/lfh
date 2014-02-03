@@ -1,6 +1,11 @@
 .reveal section img {
 	border: 0px;
 	box-shadow: none;
+	background: transparent;
+}
+
+.reveal p {
+	margin-bottom: 20px;
 }
 
 html.healthcare-is-broken body .reveal{
@@ -19,6 +24,11 @@ html.meet-joe body .reveal h1 {
 html.joe-in-er body .reveal {
 	background-color: #7c102a;
 	color: #9EC0C0;
+}
+
+html.joe-in-er body .reveal img {
+	zoom: 1.6;
+	margin-top: -50px;
 }
 
 html.hie body .reveal {
