@@ -6,24 +6,32 @@
 
 .reveal p {
 	margin-bottom: 20px;
+	color: #EDEDED;
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+	color: #EDEDED;
 }
 
 html.healthcare-is-broken body .reveal{
-	background-color: #2f99ba;
+	background-color: #4E9CB5;
 }
 
 html.meet-joe body .reveal {
-	background-color: #7c102a;
-	color: #9EC0C0;
+	background-color: #02779E;
+	color: #EDEDED;
 }
 
 html.meet-joe body .reveal h1 {
-	color: #D04A5E;
+	color: #EDEDED;
 }
 
 html.joe-in-er body .reveal {
-	background-color: #7c102a;
-	color: #9EC0C0;
+	background-color: #02779E;
+}
+
+html.joe-in-er body .reveal p {
+	color: #EDEDED;
 }
 
 html.joe-in-er body .reveal img {
@@ -32,25 +40,27 @@ html.joe-in-er body .reveal img {
 }
 
 html.hie body .reveal {
-	background-color: #89a342;
-	color: white;
+	background-color: #4E9CB5;
 }
 
 html.hie-network body .reveal {
-	background-color: #89a342;
-	color: white;
+	background-color: #4E9CB5;
 }
 
 html.insights body .reveal {
-	background-color: #cf324e;
+	background-color: #4E9CB5;
 	color: #9EC0C0;
 }
 
 html.team body .reveal {
-	background-color: #edaa1e;
+	background-color: #5D656C;
 	color: #1e2834;
 }
 
 html.care-evolution body .reveal {
 	background-color: #fff;
+}
+
+html.care-evolution body .reveal p {
+	color: #5D656C;
 }
