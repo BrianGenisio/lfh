@@ -35,7 +35,7 @@ html.joe-in-er body .reveal p {
 }
 
 html.joe-in-er body .reveal img {
-	width: 390px;
+	max-width: 370px;
 }
 
 html.hie body .reveal {
@@ -54,11 +54,14 @@ html.insights body .reveal {
 html.insights body .reveal section.insights {
 	background-color: #02779E;
 	padding-bottom: 0px;
-	padding-right: 15px;
 	border-bottom: 1px solid #5D656C;
 
 	-moz-border-radius: 15px;
 	border-radius: 15px;
+}
+
+html.insights body .reveal section.insights p {
+	margin-right: 15px;
 }
 
 html.insights body .reveal section.insights img {
