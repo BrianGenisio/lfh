@@ -22,8 +22,22 @@ html.meet-joe body .reveal {
 	color: #EDEDED;
 }
 
+html.meet-joe body .reveal .slides section {
+	height: 100%;
+}
+
 html.meet-joe body .reveal h1 {
 	color: #EDEDED;
+}
+
+html.meet-joe body .reveal .joe-container {
+	position: relative;
+	height: 100%;
+}
+
+html.meet-joe body .reveal img {
+	position: absolute;
+	bottom: 0;
 }
 
 html.joe-in-er body .reveal {
