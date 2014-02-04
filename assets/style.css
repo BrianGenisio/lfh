@@ -65,6 +65,20 @@ html.insights body .reveal {
 	color: #9EC0C0;
 }
 
+html.insights body .reveal section.insights {
+	background-color: #02779E;
+	padding-bottom: 0px;
+	padding-right: 15px;
+	border-bottom: 1px solid #5D656C;
+
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+html.insights body .reveal section.insights img {
+	margin-bottom: 0px;
+}
+
 html.team body .reveal {
 	background-color: #5D656C;
 	color: #1e2834;
