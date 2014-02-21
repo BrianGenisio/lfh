@@ -28,9 +28,11 @@
           <section class="healthcare-is-broken" data-state="healthcare-is-broken">
             <h1>Healthcare is broken.</h1>
 
-                    <p>There are a lot of problems in healthcare.  Big, complex problems.  And one of the biggest is that caregivers have an incomplete picture of patients' clinical data - leading to inaccurate diagnoses and inappropriate courses of treatment.</p>
+            <p>There are a lot of problems in healthcare.  Big, complex problems.  And one of the biggest is that caregivers have an incomplete picture of patients' clinical data - leading to inaccurate diagnoses and inappropriate courses of treatment.</p>
 
-                    <p>CareEvolution is working to solve this problem.  But we need talented <span class="emphasis">software engineers</span> - fulltime and interns - to join us in realizing our vision.</p>
+            <p>CareEvolution is working to solve this problem.  But we need talented <span class="emphasis">software engineers</span> - fulltime and interns - to join us in realizing our vision.</p>
+
+            <button class="btn btn-lg">Click anywere to continue...</button>
           </section>
 
           <section class="meet-joe row" data-state="meet-joe">
@@ -118,6 +120,17 @@
         transition: 'linear',
         backgroundTransition: 'concave'
       });
+
+      $(document).click(function(e) {
+        var $target = $(e.target);
+        var $controls = $target.closest('.controls');
+
+        if($controls.length <= 0) {
+          Reveal.next();
+        }
+      });
+
+
     </script>
 
   </body>
