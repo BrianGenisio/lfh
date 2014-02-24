@@ -38,6 +38,10 @@ html.joe-in-er body .reveal p {
 	color: #EDEDED;
 }
 
+html.joe-in-er body .reveal img {
+	max-width: 370px;
+}
+
 html.hie body .reveal {
 	background-color: #4E9CB5;
 }
