@@ -118,8 +118,12 @@
         touch: true,
         mouseWheel: true,
         transition: 'linear',
-        backgroundTransition: 'concave',
-        hideAddressBar: true
+        transitionSpeed: 'fast',
+        backgroundTransition: 'none',
+        hideAddressBar: true,
+        height: 800,
+        minScale: .1,
+        maxScale: 1.1
       });
 
       $(document).click(function(e) {
